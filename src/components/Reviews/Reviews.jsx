@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getReviewsMovie } from 'services/getMovies';
@@ -33,6 +34,12 @@ const Reviews = () => {
       ))}
     </StyledList>
   );
+};
+
+Reviews.propTypes = {
+  id: PropTypes.number,
+  author: PropTypes.string,
+  content: PropTypes.string,
 };
 
 export default Reviews;

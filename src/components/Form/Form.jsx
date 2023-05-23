@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { InputSearch, ButtonSearch } from './Form.module';
 
@@ -29,5 +30,10 @@ const Form = ({ setSearchParams }) => {
     </form>
   );
 };
+
+Form.propTypes = {
+  onSubmit: PropTypes.func,
+};
+
 
 export default Form;

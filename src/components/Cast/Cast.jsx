@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCastMovie } from 'services/getMovies';
@@ -47,6 +48,13 @@ const Cast = () => {
       }
     </>
   );
+};
+
+Cast.propTypes = {
+  id: PropTypes.number,
+  profile_path: PropTypes.string,
+  original_name: PropTypes.string,
+  character: PropTypes.string
 };
 
 export default Cast;

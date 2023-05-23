@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useLocation, Link } from 'react-router-dom';
 import { ListFilms, ItemFilms } from './FilmsList.module';
 
@@ -14,6 +15,11 @@ const FilmsList = ({ movies }) => {
       ))}
     </ListFilms>
   );
+};
+
+FilmsList.propTypes = {
+  id: PropTypes.number,
+  original_title: PropTypes.string,
 };
 
 export default FilmsList;
