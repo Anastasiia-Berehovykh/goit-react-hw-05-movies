@@ -37,9 +37,9 @@ const Reviews = () => {
 };
 
 Reviews.propTypes = {
-  id: PropTypes.number,
-  author: PropTypes.string,
-  content: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default Reviews;

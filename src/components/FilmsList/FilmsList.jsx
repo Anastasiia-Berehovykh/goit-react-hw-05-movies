@@ -18,7 +18,7 @@ const FilmsList = ({ movies }) => {
 };
 
 FilmsList.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   original_title: PropTypes.string,
 };
 

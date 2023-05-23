@@ -51,10 +51,10 @@ const Cast = () => {
 };
 
 Cast.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   profile_path: PropTypes.string,
   original_name: PropTypes.string,
-  character: PropTypes.string
+  character: PropTypes.string,
 };
 
 export default Cast;
